@@ -1,0 +1,10 @@
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        filters:
+#          - name: Logging
+#            args:
+#              baseMessage: Last Last
+#              preLogger: true
+#              postLogger: true

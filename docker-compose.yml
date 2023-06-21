@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  postgresdb:
+    image: postgres
+    restart: on-failure
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: customer
+
+  mongodb:
+    image: mongo
+    restart: on-failure
+    ports:
+      - "27017:27017"
